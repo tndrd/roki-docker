@@ -1,1 +1,1 @@
-docker build -t roki .
+docker build --no-cache -t roki .
