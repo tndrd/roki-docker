@@ -1,1 +1,1 @@
-docker run -it roki
+docker run -it --mount "type=bind,src=%cd%/workspace,target=/workspace" roki
