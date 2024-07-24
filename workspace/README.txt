@@ -1,0 +1,1 @@
+This folder ("workspace/") is bound to container by default
