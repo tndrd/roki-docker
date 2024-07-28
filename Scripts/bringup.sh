@@ -2,8 +2,10 @@
 set -e
 
 # Set environment variables
-source /setup/roki-mb-daemon/params.sh
-echo "source /setup/roki-mb-daemon/params.sh" >> ~/.bashrc
+PARAMS_FILE=/setup/roki-lowlvl/Misc/default-params.sh
+
+source $PARAMS_FILE
+echo "source ${PARAMS_FILE}" >> ~/.bashrc
 
 # Start daemon
 mbctl daemon start > /dev/null
